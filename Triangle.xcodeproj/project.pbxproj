@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		B29D8A0B2769344F00174D0A /* TriangleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29D8A0A2769344F00174D0A /* TriangleApp.swift */; };
-		B29D8A0D2769344F00174D0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29D8A0C2769344F00174D0A /* ContentView.swift */; };
 		B29D8A0F2769345300174D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29D8A0E2769345300174D0A /* Assets.xcassets */; };
 		B29D8A122769345300174D0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29D8A112769345300174D0A /* Preview Assets.xcassets */; };
+		B29D8A1A27694E7300174D0A /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29D8A1927694E7300174D0A /* TriangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B29D8A072769344F00174D0A /* Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29D8A0A2769344F00174D0A /* TriangleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleApp.swift; sourceTree = "<group>"; };
-		B29D8A0C2769344F00174D0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B29D8A0E2769345300174D0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B29D8A112769345300174D0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B29D8A1927694E7300174D0A /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				B29D8A0A2769344F00174D0A /* TriangleApp.swift */,
-				B29D8A0C2769344F00174D0A /* ContentView.swift */,
+				B29D8A1927694E7300174D0A /* TriangleView.swift */,
 				B29D8A0E2769345300174D0A /* Assets.xcassets */,
 				B29D8A102769345300174D0A /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B29D8A0D2769344F00174D0A /* ContentView.swift in Sources */,
+				B29D8A1A27694E7300174D0A /* TriangleView.swift in Sources */,
 				B29D8A0B2769344F00174D0A /* TriangleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
