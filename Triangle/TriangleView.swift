@@ -78,6 +78,12 @@ struct TriangleView: View {
                 
                 Text("\(totalOfSides)")
                 
+                if totalOfSides > 180 {
+                    Text("Error")
+                        .bold()
+                }
+                
+                
             }
         }
     }
