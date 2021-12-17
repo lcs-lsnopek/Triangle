@@ -29,8 +29,12 @@ struct TriangleView: View {
                         .font(.title2)
                         .bold()
                     
-                    Text("\(side1)")
-                        .bold()
+                    HStack {
+                        Spacer()
+                        Text("\(String(format: "%.1f", side1))")
+                            .font(.title2)
+                        Spacer()
+                    }
                     
                     Slider(value: $side1,
                            in: 0.0...179.0,
@@ -48,7 +52,13 @@ struct TriangleView: View {
                     Text("Angle 2")
                         .font(.title2)
                         .bold()
-                    Text("\(side2)")
+                    
+                    HStack {
+                        Spacer()
+                        Text("\(String(format: "%.1f", side2))")
+                            .font(.title2)
+                        Spacer()
+                    }
                     
                     Slider(value: $side2,
                            in: 0.0...179.0,
@@ -63,12 +73,18 @@ struct TriangleView: View {
                     })
                         .padding()
                     
-                    Text("\(side3)")
-                        .bold()
+
                     
                     Text("Angle 3")
                         .font(.title2)
                         .bold()
+                    
+                    HStack {
+                        Spacer()
+                        Text("\(String(format: "%.1f", side3))")
+                            .font(.title2)
+                        Spacer()
+                    }
                     
                     Slider(value: $side3,
                            in: 0.0...179.0,
@@ -85,34 +101,43 @@ struct TriangleView: View {
                     
                 }
                 
-                Text("\(totalOfSides)")
+                HStack {
+                    Spacer()
+                    Text("\(String(format: "%.1f", totalOfSides))")
+                        .font(.title2)
+                    Spacer()
+                }
                 
                 if totalOfSides > 180 {
                     Text("Error")
+                        .font(title2)
                         .bold()
                 }
                 if totalOfSides < 180 {
                     Text("Error")
+                        .font(title2)
                         .bold()
                 }
                 if totalOfSides / 3 == side1 {
                     Text("Equlaterl")
+                        .font(title2)
                         .bold()
                 }
                 if totalOfSides < side1 {
                     Text("Isosales")
+                        .font(title2)
                         .bold()
                 }
                 if totalOfSides < side2 {
                     Text("Isosales")
+                        .font(title2)
                         .bold()
                 }
                 if totalOfSides < side3 {
                     Text("Isosales")
+                        .font(title2)
                         .bold()
                 }
-                
-                
             }
         }
     }
