@@ -107,37 +107,85 @@ struct TriangleView: View {
                         .font(.title2)
                     Spacer()
                 }
-                
+                Group{
                 if totalOfSides > 180 {
                     Text("Error")
-                        .font(title2)
+                        .font(.title2)
                         .bold()
                 }
                 if totalOfSides < 180 {
                     Text("Error")
-                        .font(title2)
+                        .font(.title2)
                         .bold()
                 }
+                
+                
                 if totalOfSides / 3 == side1 {
                     Text("Equlaterl")
-                        .font(title2)
+                        .font(.title2)
                         .bold()
                 }
-                if totalOfSides < side1 {
-                    Text("Isosales")
-                        .font(title2)
+                
+                
+                if side1 == 90 {
+                    Text("Right Triangle")
+                        .font(.title2)
                         .bold()
                 }
-                if totalOfSides < side2 {
-                    Text("Isosales")
-                        .font(title2)
+                if side2 == 90 {
+                    Text("Right Triangle")
+                        .font(.title2)
                         .bold()
                 }
-                if totalOfSides < side3 {
-                    Text("Isosales")
-                        .font(title2)
+                if side3 == 90 {
+                    Text("Right Triangle")
+                        .font(.title2)
                         .bold()
                 }
+                
+                
+                if side1 > 90 {
+                    Text("Obtus Triangle")
+                        .font(.title2)
+                        .bold()
+                }
+                if side2 > 90 {
+                    Text("Obtus Triangle")
+                        .font(.title2)
+                        .bold()
+                }
+                if side3 > 90 {
+                    Text("Obtus Triangle")
+                        .font(.title2)
+                        .bold()
+                }
+                
+                
+                if (side1 < 90) == (side2 < 90) {
+                    Text("Isosceles Triangle")
+                        .font(.title2)
+                        .bold()
+                }
+                if (side1 < 90) == (side3 < 90) {
+                    Text("Isosceles Triangle")
+                        .font(.title2)
+                        .bold()
+                }
+                if (side3 < 90) == (side2 < 90) {
+                    Text("Isosceles Triangle")
+                        .font(.title2)
+                        .bold()
+                }
+                
+                
+                if (side1 < 90) (side2 < 90) (side3 < 90) {
+                    Text("Acute Triangle")
+                        .font(.title2)
+                        .bold()
+                }
+                }
+                
+                
             }
         }
     }
